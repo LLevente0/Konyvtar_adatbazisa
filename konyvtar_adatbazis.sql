@@ -21,7 +21,7 @@ CREATE Table konyvek (
 CREATE TABLE olvasok (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nev VARCHAR(100) NOT NULL,
-    szuletesi_datum DATE NOT NULL
+    szuletesi_datum DATE NOT NULL,
     varos VARCHAR(50) DEFAULT 'Budapest',
     aktiv ENUM('igen', 'nem') DEFAULT 'igen',
     regisztracio_idopontja TIMESTAMP DEFAULT CURRENT_TIMESTAMP
