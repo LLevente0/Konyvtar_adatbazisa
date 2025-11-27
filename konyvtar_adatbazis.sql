@@ -7,7 +7,8 @@ CREATE DATABASE konyvtaradatbazis
 USE konyvtaradatbazis;
 
 #4.feladat
-CREATE Table konyvek (
+DROP TABLE IF EXISTS konyvek 
+CREATE TABLE IF NOT EXISTS konyvek (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     cim VARCHAR(200) NOT NULL UNIQUE,
     szerzo VARCHAR(120),
