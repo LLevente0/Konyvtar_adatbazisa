@@ -8,3 +8,7 @@ CREATE DATABASE videotekaadatbazis IF NOT EXISTS
 USE videotekaadatbazis;
 
 --4.feladat
+DROP Table filmek IF EXISTS;
+CREATE TABLE filmek IF NOT EXISTS
+
+
