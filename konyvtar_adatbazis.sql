@@ -1,5 +1,5 @@
 #2.feladat
-CREATE DATABASE konyvtaradatbazis
+CREATE DATABASE konyvtaradatbazis;
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_hungarian_ci;
 
@@ -7,7 +7,7 @@ CREATE DATABASE konyvtaradatbazis
 USE konyvtaradatbazis;
 
 #4.feladat
-DROP TABLE IF EXISTS konyvek 
+DROP TABLE IF EXISTS konyvek;
 CREATE TABLE IF NOT EXISTS konyvek (
     id INTEGER PRIMARY KEY AUTO_INCREMENT,
     cim VARCHAR(200) NOT NULL UNIQUE,
