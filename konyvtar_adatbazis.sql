@@ -12,9 +12,9 @@ CREATE Table konyvek (
     cim VARCHAR(200) NOT NULL UNIQUE,
     szerzo VARCHAR(120),
     kiadasi_ev YEAR,
-    oldalszam INTEGER CHECK()
-    kategoria ENUM("fantasy", "sci-fi", "disztópia", "történelem"),
-    ertekeles FLOAT DEFAULT 5.0;
+    oldalszam INTEGER CHECK (oldalszam BETWEEN 20 AND 2000),
+    kategoria ENUM ("fantasy", "sci-fi", "disztópia", "történelem"),
+    ertekeles FLOAT DEFAULT (5.0));
 )
 
 #5.feladat
